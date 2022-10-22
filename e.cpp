@@ -12,5 +12,5 @@ int main(){
         else sum2 += s[i] - 48;
     }
     if(sum1 == sum2) cout << "YES";
-    else cout << "NO";  
+    else cout << "NO";
 }
