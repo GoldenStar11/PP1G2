@@ -30,7 +30,7 @@ int main()
   }
         i j
     int c,d;
-    if(max < a[i][j]
+    if(max < a[i][j])
     max = a[i][j]
     c = i;
     d = j;
