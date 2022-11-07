@@ -9,9 +9,10 @@ int main(){
     for(int i = 0; i < s.size(); i++){
         if(s.substr(i, t.size()) == t){
             cnt++;
-        }
+            break;
+        } 
     }
-    if(cnt > 0) cout << "YES";
+    if(cnt == 1) cout << "YES";
     else cout << "NO";
     return 0;
 }
