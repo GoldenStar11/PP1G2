@@ -3,8 +3,7 @@
 using namespace std;
 
 bool isPrime(int a){
-    if(a == 2 || a == 3) return true;
-    for(int i = 2; i < a; i++){
+    for(int i = 2; i < sqrt(a); i++){
         if(a % i == 0) return false;
     }
     return true;
@@ -21,7 +20,7 @@ int main(){
     }
     cin >> k;
     for(int i = 0; i < v.size(); i++){
-        if(isPrime(v[i]) && v[i] > k) cnt++;
+        if(isPrime(v[i]) == true && v[i] > k) cnt++;
     }
     cout << cnt;
 }
