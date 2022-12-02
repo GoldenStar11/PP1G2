@@ -13,13 +13,17 @@ int max(int a, int b){
 }
 
 int min(int a, int b, int c){
-
+    //if(a >= b >= c) return c;
+    //if(a > c > b)  return b;
+    //if(b > c > a) return a
 }
 
 
 int main(){
     int a,b,m,n;
     cin >> a >> b >> m >> n; // 10 20
+    int x = max(a,b);
+    int y = min(a,b,m);
     cout << max(a,b) + max(m,n);
     /*if(a >= b)  c = a;
     else c = b;

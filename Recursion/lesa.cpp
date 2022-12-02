@@ -15,7 +15,7 @@ int findSumRecursively(int n){
         return 0;
     }
     return n + findSumRecursively(n-1); // n + n-1 + n-2 + n-3 + find(n-4)
-}
+} // 5 + find(4) = 5 + 4 + 3 + 2 + 1 + 0 = 15 
 /*
 18 -7
 17 -6
@@ -27,7 +27,7 @@ int findSumRecursively(int n){
 11 0 - n-10
 10 1 - n-9
 9 2 - n-8
-8 3 - n-7
+8 3 - n7-
 7 4 - n-6
 6 5 - n-5
 5 6 - n-4

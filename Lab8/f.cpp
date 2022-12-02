@@ -11,7 +11,7 @@ int main(){
     }
     int a,b;
     cin >> a >> b;
-    v.insert(v.begin() + a, b);
+    v.insert(v.begin() + a, b); // (5, 101)
     for(int i = 0;i < v.size();i ++) 
         cout << v[i] << " ";  
 }
