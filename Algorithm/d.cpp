@@ -12,14 +12,14 @@ int main () {
 
   // using default comparison:
   vector<int>::iterator it;
-/*  it = unique (myvector.begin(), myvector.end());   // 10 20 30 20 10 ?  ?  ?  ?
+  it = unique (myvector.begin(), myvector.end());   // 10 20 30 20 10 ?  ?  ?  ?
                                                          //                ^
 
-  // 10 20 30 20 10
-*/
+  myvector.resize(distance(myvector.begin(),it) ); // 10 20 30 20 10
+
   // using predicate comparison:
   unique(myvector.begin(), myvector.end(), myfunction);   // (no changes)
-  myvector.resize(distance(myvector.begin(),it));
+
   // print out content:
   cout << "myvector contains:";
   for (it=myvector.begin(); it!=myvector.end(); ++it)

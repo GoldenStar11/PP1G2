@@ -22,8 +22,6 @@ int main(){
    int cnt = 0;
    map<int, int> :: iterator it;
    for(it = mp.begin(); it != mp.end(); it++){
-        if(it -> second >= 2) cnt++;
-        //cout << it -> first << ' ' << it -> second << endl;
+        if(it -> second >= 2) cout << it << endl;
    }
-   cout << cnt;
 }

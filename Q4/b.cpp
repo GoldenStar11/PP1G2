@@ -21,6 +21,7 @@ int main(){
         if(it -> second == max) cout << it->first << endl;
     }
     for(it = mp.begin(); it != mp.end(); it++){
+        if(it -> second != max)
         cout << it->first << ' ' << max - it->second << endl;
     }
 }
