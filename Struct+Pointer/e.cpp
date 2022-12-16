@@ -3,14 +3,6 @@
 #include <vector>
 
 using namespace std; /*
-2 1 3
-next: 2 3 1
-      3 1 2
-      3 2 1
-
-prev: 1 2 3
-      1 3 2
-*/
 
 struct Student{
   string name; // fields
