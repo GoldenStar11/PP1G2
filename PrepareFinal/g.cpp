@@ -19,12 +19,22 @@ int main(){
         b[i] = cnt;
         cnt = 0;
     }
+    /*
+    3 4
+    1 1 -3 1
+    -4 2 2 1
+    1 -2 2 1
+     
+    b[3]
+    0 1 2
+    3 3 3
+    */
     int max = 0;
     for(int i = 0; i < n; i++){
         if(max < b[i]){
             max = b[i];
         }
-    }
+    } // max = 3
     bool flag = true;
     for(int i = 0; i < n - 1; i++){
         if(b[i] != b[i+1]){
