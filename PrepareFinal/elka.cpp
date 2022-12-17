@@ -3,7 +3,7 @@ using namespace std;
  
 int main()
 {
-  int height = 0; // высота треугольника
+  int height = 0;
  
   cin >> height;
  
